@@ -6,6 +6,7 @@ require 'pry'
 
 class AnimalTest <Minitest::Test
   def test_it_exists
+
     sit = Skill.new("sit")
     down = Skill.new("down")
     play_dead = Skill.new("play dead", true)
@@ -66,4 +67,5 @@ class AnimalTest <Minitest::Test
       expected = {party_tricks: ["play dead"] , not_party_tricks: ["sit","down"]}
       assert_equal expected, animal.categorize_commands
     end
+
 end
