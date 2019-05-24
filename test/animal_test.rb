@@ -6,7 +6,6 @@ require 'pry'
 
 class AnimalTest <Minitest::Test
   def test_it_exists
-
     sit = Skill.new("sit")
     down = Skill.new("down")
     play_dead = Skill.new("play dead", true)
@@ -41,7 +40,7 @@ class AnimalTest <Minitest::Test
     assert_equal [sit,down], animal.skills
   end
 
-  def test_it_can_count_how_mand_party_tricks_an_animal_has
+  def test_it_can_count_how_many_party_tricks_an_animal_has
     skip
     sit = Skill.new("sit")
     down = Skill.new("down")

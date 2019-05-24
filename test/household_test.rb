@@ -21,6 +21,7 @@ class HouseholdTest <Minitest::Test
   end
 
   def test_it_can_list_animals_that_know_a_certain_skill
+    skip
     sit = Skill.new("sit")
     down = Skill.new("down")
     play_dead = Skill.new("play dead", true)
@@ -37,6 +38,7 @@ class HouseholdTest <Minitest::Test
   end
 
   def test_it_can_lists_animals_without_any_party_tricks
+    skip
     sit = Skill.new("sit")
     down = Skill.new("down")
     play_dead = Skill.new("play dead", true)
