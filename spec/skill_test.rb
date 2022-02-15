@@ -1,9 +1,9 @@
-require 'rspect'
+require 'rspec'
 require './lib/animal'
 require './lib/skill'
 require 'pry'
 
-describe Skill
+describe Skill do 
   it  'it_exists' do 
     sit = Skill.new("sit")
 
