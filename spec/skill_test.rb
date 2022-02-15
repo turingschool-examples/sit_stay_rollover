@@ -4,13 +4,13 @@ require './lib/skill'
 require 'pry'
 
 describe Skill do 
-  it  'it_exists' do 
+  it  'it exists' do 
     sit = Skill.new("sit")
 
-    expect(sit).to eq(Skill)
+    expect(sit).to be_an_instance_of(Skill)
   end
 
-  it  'it_has_attributes' do 
+  it  'it has attributes' do 
     sit = Skill.new("sit")
 
     expect(sit.command).to eq("sit") 
@@ -22,7 +22,7 @@ describe Skill do
     expect(sit.party_trick?).to eq(false)
   end
 
-  it  'skill_can_be_a_party_trick' do 
+  it  'skill can be a party trick' do 
     play_dead = Skill.new("play dead", true)
 
     expect(play_dead.party_trick?).to eq(true)
