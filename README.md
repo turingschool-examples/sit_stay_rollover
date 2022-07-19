@@ -7,6 +7,6 @@ This repository is meant to help you practice with nested collections. Animals h
 
 * Clone this repository onto local computer
 * Use TDD to make the following tests pass in this exact order:
-  - `skill_test.rb`
-  - `animal_test.rb`
-  - `household_test.rb`
+  - `skill_spec.rb`
+  - `animal_spec.rb`
+  - `household_spec.rb`
